@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    font-family: "roboto";
+    padding: 0; 
+    margin: 0;
+}
+/* header */
+.nav-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: auto;
+    padding: 30px;
+    white-space: nowrap;
+}
+.nav-container .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-container #logo {
+    font-size: 25px;
+    margin-right:40px;
+}
+.nav-container #menu-icon div {
+    width:35px;
+    height: 5px;
+    background-color: #000000;
+    margin:4px;
+    display:none;
+}
+.nav-container #exit-icon {
+    font-size:25px;
+    font-weight: bolder;
+    color: #000000;
+    display: none;
+}
+.nav-container .links-container,
+.nav-container .links-container .main-links,
+.nav-container .links-container .other-links {
+    display: flex;
+}
+
+.nav-container .links-container div {
+    margin: 0 30px 0 0;
+}
+.nav-container div a {
+    text-decoration: none;
+}
+.nav-container .links-container .main-links .link-item,
+.nav-container .links-container .other-links .link-item {
+    margin:0 20px 0 0;
+}
+
+@media only screen and (min-width:1024px) {
+    .nav-container {
+        justify-content: space-around;
+        padding: 20px 100px;
+    }
+    .nav-container #logo {
+        margin-right: 0;
+    }
+}
