@@ -306,6 +306,17 @@ footer .footer-content-containter .footer-content ul li:first-of-type {
     font-weight: 700;
 }
 
+footer .footer-content-containter .footer-content img {
+  width:20px;
+  height:20px;
+  background-color:inherit;
+  color: black;
+}
+footer .footer-content-containter .footer-content .social-logo {
+    margin:20px;
+}
+
+
 @media only screen and (min-width:1024px) {
     .nav-container {
         justify-content: space-around;
@@ -363,6 +374,7 @@ footer .footer-content-containter .footer-content ul li:first-of-type {
         flex-direction: row;
         justify-content: space-evenly;
     }
+
 }
 
 
