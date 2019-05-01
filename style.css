@@ -204,12 +204,20 @@ h1 span {
     padding: 30px;
 }
 
+
 .content .content-container .services-container .services-item {
     border: 1px solid #D3D3D3;
     border-radius: 5px;
     background-color: #F5F5F5;
     margin: 10px;
     width: inherit;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+.content .content-container .services-container .services-item div img {
+    width: 100px;
+    height: inherit;
 }
 .content .content-container .services-container .services-item h3 {
     position: relative;
@@ -325,7 +333,9 @@ footer .footer-content-containter .footer-content ul li:first-of-type {
         margin: auto;
         width:700px;
     }
-
+    .content .content-container .services-container .services-item {
+        flex-direction: row;
+    }
     .content .content-container .services-cta-container {
         justify-content: space-around;
         margin: 0;
