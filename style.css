@@ -14,8 +14,9 @@
     overflow: auto;
     padding: 30px;
     white-space: nowrap;
-    position: absolute;
+    position: relative;
     z-index:2;
+
 }
 .nav-container .mobile-nav {
     display: flex;
@@ -61,32 +62,101 @@
 }
 
 
+/* intro */
+
+.intro {
+    position: relative;
+    height:800px;
+    overflow: hidden;
+}
+.intro-background {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left:0;
+    background-image: linear-gradient(#3c0755, #6d0eb7, #543cc8);
+    transform: skewY(-6deg);
+    transform-origin: top left;
+}
+
+h1 {
+    margin:0;
+    font-size: 40px;
+    text-align: center;
+    padding:200px 0 20px 0;
+}
+
+h1 span {
+    color:#37EB7B;
+}
+.intro .text-container h1 {
+    position: relative;
+    color: #ffffff;
+}
+.intro .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0 20px;
+}
+.intro .text-container .input-container {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+.intro .text-container .input-container input[type="text"]{
+    position: relative;
+    padding: 20px 10px;
+    width: inherit;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}   
+
+.intro .text-container .input-container button {
+    border: none;
+    position: relative;
+    padding: 20px;
+    width: inherit;
+    border-radius: 5px;
+    background-color: #37EB7B;
+}
+
+.intro .text-container 
+.intro .text-container {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
 @media only screen and (min-width:1024px) {
     .nav-container {
         justify-content: space-around;
         padding: 20px 100px;
     }
+
     .nav-container #logo {
         margin-right: 800px;
     }
+
     .nav-container .links-container .main-links {
         margin-right: 60px
     }
-}
 
-
-/* intro */
-
-.intro {
-    background-color:rgb(60, 7, 85);
-    width: 100%;
-    height: 800px;
-    position:relative;
-    top: 0;
-    bottom: 0;
-    right:0 ;
-    left:0 ;
-    background-image: linear-gradient(#3c0755, #6d0eb7, #543cc8);
-    transform: skewY(-6deg);
-    transform-origin: top left;
+    h1 {
+        font-size: 50px;
+    }
+    .intro .text-container {
+       margin: auto;
+       width:420px;
+    }
+    .intro .text-container .input-container input[type="text"] {
+        width: 300px;
+    }
 }
