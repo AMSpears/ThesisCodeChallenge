@@ -170,9 +170,8 @@ h1 span {
     justify-content: center;
 }
 
-.content .content-container div{
-    width: 70%;
-    margin: auto;
+.content .content-container .content-text{
+    margin: 40px auto 20px auto;
 }
 .content .content-container p {
    color: #747675;
@@ -185,9 +184,8 @@ h1 span {
     background-color:#543cc8;
     padding: 10px 20px;
     width: inherit;
-    height:inherit;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     text-transform: uppercase;
     font-size: 16px;
  }
@@ -211,14 +209,15 @@ h1 span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+    padding: 30px;
 }
 
 .content .content-container .services-container .services-item {
     border: 1px solid #D3D3D3;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #F5F5F5;
-    margin: 10px auto;
+    margin: 10px;
+    width: inherit;
 }
 .content .content-container .services-container .services-item h3 {
     position: relative;
@@ -232,6 +231,52 @@ h1 span {
     padding: 20px;
     font-size: 14px;
     text-align: left;
+}
+
+.content .content-container .services-cta-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+.content .content-container .services-cta-container .cta-content p {
+    font-size: 20px;
+    text-align: left;
+}
+.content .content-container .services-cta-container .cta-content p:first-of-type {
+    color:#543cc8;
+}
+
+.content .content-container .services-cta-container .cta-content p:last-of-type {
+    color:#3c0755;
+}
+.content .content-container .services-cta-container .cta-btns  {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .content-container .services-cta-container .cta-btns .create-acct-btn a,
+.content .content-container .services-cta-container .cta-btns .contact-us-btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.content .content-container .services-cta-container .cta-btns .contact-us-btn a {
+    color: #543cc8;
+}
+
+.content .content-container .services-cta-container .cta-btns .contact-us-btn {
+    position: relative;
+    background-color:#ffffff;
+    border: 1px solid #D3D3D3;
+    padding: 10px 20px;
+    width: inherit;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 @media only screen and (min-width:1024px) {
     .nav-container {
@@ -248,13 +293,33 @@ h1 span {
     }
     .intro .text-container {
        margin: auto;
-       width:420px;
+       width:450px;
     }
+    
     .intro .text-container .input-container input[type="text"] {
         width: 300px;
     }
+    .content .content-container .content-text {
+        margin: auto;
+        width:700px;
 
-    .content .content-container div {
-        width: 40%;
+    }
+    .content .content-container .services-cta-container {
+        justify-content: space-around;
+        margin: 0;
+
+    }
+    .content .content-container .services-cta-container {
+        flex-direction: row;
+    }
+    .content .content-container .services-cta-container .cta-btns {
+        flex-direction: row;    
+    }
+    .content .content-container .services-cta-container .cta-btns .create-acct-btn {
+        margin-right:10px;
+    }
+    .content .content-container .services-container .services-item {
+        width: 600px;
+        height: 200px;
     }
 }
