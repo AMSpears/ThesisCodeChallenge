@@ -1,11 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
 * {
     font-family: "roboto";
     color: #ffffff;
     padding: 0; 
     margin: 0;
+    box-sizing: border-box;
 }
+
 /* header */
 .nav-container {
     display: flex;
@@ -18,27 +21,12 @@
     z-index:2;
 
 }
-.nav-container .mobile-nav {
-    display: flex;
-    justify-content: space-between;
-}
+
 .nav-container #logo {
     font-size: 25px;
     margin-right:40px;
 }
-.nav-container #menu-icon div {
-    width:35px;
-    height: 5px;
-    background-color: #000000;
-    margin:4px;
-    display:none;
-}
-.nav-container #exit-icon {
-    font-size:25px;
-    font-weight: bolder;
-    color: #000000;
-    display: none;
-}
+
 .nav-container .links-container,
 .nav-container .links-container .main-links,
 .nav-container .links-container .other-links {
@@ -69,6 +57,7 @@
     height:800px;
     overflow: hidden;
 }
+
 .intro-background {
     width: 100%;
     height: 100%;
@@ -86,7 +75,7 @@ h1 {
     margin:0;
     font-size: 40px;
     text-align: center;
-    padding:200px 0 20px 0;
+    margin:200px 0 20px 0;
 }
 
 h1 span {
@@ -162,6 +151,7 @@ h1 span {
     width: 100%;
     height: inherit;
     position: relative;
+    padding:30px;
 }
 
 .content .content-container {
@@ -189,9 +179,11 @@ h1 span {
     text-transform: uppercase;
     font-size: 16px;
  }
+
  .content .content-container .create-acct-btn  a{
     text-decoration: none;
  }
+ 
 .content h2 {
     color: #747675;
     font-size: 25px;
@@ -278,6 +270,34 @@ h1 span {
     text-transform: uppercase;
     font-size: 16px;
 }
+
+/* footer */
+footer {
+    background-color: #543cc8;
+    width: 100%;
+    height: inherit;
+    padding: 30px;
+
+}
+
+footer .footer-content-containter {
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .footer-content-containter .footer-content ul li {
+    list-style-type: none;
+    margin: 10px;
+    font-size: 15px;
+    color: #D3D3D3;
+}
+
+footer .footer-content-containter .footer-content ul li:first-of-type {
+    color: #ffffff;
+    font-weight: 700;
+}
+
 @media only screen and (min-width:1024px) {
     .nav-container {
         justify-content: space-around;
@@ -291,35 +311,48 @@ h1 span {
     h1 {
         font-size: 50px;
     }
+
     .intro .text-container {
        margin: auto;
-       width:450px;
+       width:500px;
     }
-    
+
     .intro .text-container .input-container input[type="text"] {
         width: 300px;
     }
+
     .content .content-container .content-text {
         margin: auto;
         width:700px;
-
     }
+
     .content .content-container .services-cta-container {
         justify-content: space-around;
         margin: 0;
-
     }
+
     .content .content-container .services-cta-container {
         flex-direction: row;
     }
+
     .content .content-container .services-cta-container .cta-btns {
         flex-direction: row;    
     }
+
     .content .content-container .services-cta-container .cta-btns .create-acct-btn {
         margin-right:10px;
     }
+
     .content .content-container .services-container .services-item {
         width: 600px;
         height: 200px;
     }
+
+    footer .footer-content-containter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
+
+
