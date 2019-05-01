@@ -56,7 +56,7 @@
     margin:0 20px 0 0;
 }
 .nav-container .links-container .other-links #button {
-    background-color: #37EB7B;
+    background-color: #83F6AE;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -90,7 +90,7 @@ h1 {
 }
 
 h1 span {
-    color:#37EB7B;
+    color: #83F6AE;
 }
 .intro .text-container h1 {
     position: relative;
@@ -123,10 +123,35 @@ h1 span {
     padding: 20px;
     width: inherit;
     border-radius: 5px;
-    background-color: #37EB7B;
+    background-color: #83F6AE;
 }
 
-.intro .text-container 
+.intro .text-container .section-end-text {
+    position: relative;
+    margin-top: 180px;
+}
+
+.intro .text-container .section-end-text p {
+    text-transform: uppercase;
+    text-align: center;
+}
+.intro .text-container .section-end-text .arrow-btn {
+   transform: rotate(-90deg);
+   background-color: #83F6AE;
+   width: 40px;
+   height: 40px;
+   border-radius: 50px;
+   padding:10px;
+   margin: 20px auto;
+   text-align: center;
+   font-size: 30px;
+}
+
+.intro .text-container .section-end-text .arrow-btn a {
+    text-decoration: none;
+}
+
+
 .intro .text-container {
     display:flex;
     justify-content: center;
