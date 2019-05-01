@@ -298,12 +298,28 @@ footer {
 footer .footer-content-containter {
     display: flex;
     flex-direction: column;
-
 }
+
+footer .footer-content-containter .footer-content .contact-link {
+    display: flex;
+    margin: 20px;
+}
+
+footer .footer-content-containter .footer-content .contact-link .item img {
+    opacity: 1;
+    background: inherit;
+    margin: 0 10px 0 0;
+}
+
+footer .footer-content-containter .footer-content .contact-link .item p {
+    font-size: 15px;
+    color: #D3D3D3;
+}
+
 
 footer .footer-content-containter .footer-content ul li {
     list-style-type: none;
-    margin: 10px;
+    margin: 20px;
     font-size: 15px;
     color: #D3D3D3;
 }
