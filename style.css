@@ -320,18 +320,23 @@ footer .footer-content-containter .footer-content ul li {
     list-style-type: none;
     margin: 20px;
     font-size: 15px;
-    color: #D3D3D3;
 }
 
-footer .footer-content-containter .footer-content ul li:first-of-type {
+footer .footer-content-containter .footer-content ul li:first-of-type  {
     color: #ffffff;
     font-weight: 700;
 }
 
-footer .footer-content-containter .footer-content img {
-  width: 20px;
-  height: 20px;
-  opacity: .4;
+footer .footer-content-containter .footer-content ul li a {
+    text-decoration: none;
+    color: #D3D3D3;
+}
+
+footer .footer-content-containter .footer-content a img {
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    opacity: .4;
 }
 
 footer .footer-content-containter .footer-content .social-logo {
