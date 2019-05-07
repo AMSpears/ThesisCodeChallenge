@@ -39,6 +39,7 @@
 .nav-container div a {
     text-decoration: none;
 }
+
 .nav-container .links-container .main-links .link-item,
 .nav-container .links-container .other-links .link-item {
     margin:0 20px 0 0;
@@ -105,6 +106,8 @@ h1 span {
     border: none;
     border-radius: 5px;
     margin-right: 20px;
+    outline: none;
+    color: #000000;
 }   
 
 .intro .text-container .input-container button {
@@ -114,6 +117,12 @@ h1 span {
     width: inherit;
     border-radius: 5px;
     background-color: #83F6AE;
+    outline: none;
+    cursor: pointer;
+}
+
+.intro .text-container .input-container button:hover {
+    opacity: 0.8;
 }
 
 .intro .text-container .section-end-text {
@@ -143,7 +152,6 @@ h1 span {
     display: block;
     margin: auto;
 }
-
 
 /* body content */
 .content {
