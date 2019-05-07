@@ -4,13 +4,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src= "mobileMenuFuc.js"></script>
         <title>Thesis Code Challenge</title>
     </head>
     <body>
         <header class= "intro">
             <nav>
                 <div class= "nav-container">
-                    <div id = "logo"><a href="#">MyWebNow</a></div>
+                    <div class= "nav-menu-container">
+                        <div id = "logo"><a href="#">MyWebNow</a></div>
+                        <div id = "menu-icon" onclick = "toggleMenu()">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div id= "menu-exit" onclick = "toggleMenu()">X</div>
+                    </div>
                     <div class = "links-container">
                         <div class= "main-links">
                             <div class= "link-item"><a href="#">Home</a></div>

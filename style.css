@@ -13,13 +13,17 @@
 .nav-container {
     display: flex;
     flex-wrap: nowrap;
-    align-items: center;
-    overflow: auto;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 30px;
     white-space: nowrap;
     position: relative;
     z-index:2;
+}
 
+.nav-container .nav-menu-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-container #logo {
@@ -27,23 +31,58 @@
     margin-right:40px;
 }
 
-.nav-container .links-container,
-.nav-container .links-container .main-links,
-.nav-container .links-container .other-links {
+.nav-container #menu-icon div {
+    width: 35px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #83F6AE;
+    margin: 5px auto;
+}
+
+.nav-container #menu-exit {
+    color: #ffffff;
+    top: 0;
+    right: 0;
+    margin: 35px;
+    font-size: 30px;
+    position: absolute;
+    display: none;
+    z-index: 4;
+}
+/* mobile active styling state */
+.active {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    z-index: 3;
+    background-color: #543cc8;
+    opacity: .99;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.nav-container .links-container {
+    display: none;
 }
 
 .nav-container .links-container div {
     margin: 0 30px 0 0;
 }
+
 .nav-container div a {
     text-decoration: none;
 }
 
 .nav-container .links-container .main-links .link-item,
 .nav-container .links-container .other-links .link-item {
-    margin:0 20px 0 0;
+    margin: 20px;
 }
+
 .nav-container .links-container .other-links #button {
     background-color: #83F6AE;
     padding: 10px 20px;
@@ -351,6 +390,24 @@ footer .footer-content-containter .footer-content .social-logo {
     margin:20px;
 }
 
+@media only screen and (min-width: 768px) {
+    .nav-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-container #menu-icon div {
+       display: none;
+    }
+    .nav-container .links-container,
+    .nav-container .links-container .main-links,
+    .nav-container .links-container .other-links {
+        display: flex;
+    }
+    .nav-container .links-container .main-links .link-item,
+    .nav-container .links-container .other-links .link-item {
+        margin: 0 20px 0 0;
+    }
+}
 
 @media only screen and (min-width:1024px) {
     .nav-container {
