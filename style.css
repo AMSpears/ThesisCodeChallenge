@@ -91,6 +91,7 @@ h1 span {
     justify-content: center;
     padding:0 20px;
 }
+
 .intro .text-container .input-container {
     display: flex;
     position: relative;
@@ -125,27 +126,25 @@ h1 span {
     text-align: center;
 }
 .intro .text-container .section-end-text .arrow-btn {
-   transform: rotate(-90deg);
    background-color:#83F6AE;
-   width: 40px;
-   height: 40px;
+   width: 50px;
+   height: 50px;
    border-radius: 50px;
    margin: 40px auto 0 auto;
+   position: relative;
+}
+.intro .text-container .section-end-text .arrow-btn a img {
+    height: 30px;
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    position: absolute;
+    display: block;
+    margin: auto;
 }
 
-.intro .text-container .section-end-text .arrow-btn a {
-    text-decoration: none;
-    margin:auto;
-    padding: 5px;
-    font-size: 30px;
-}
 
-
-.intro .text-container {
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-}
 /* body content */
 .content {
     width: 100%;
